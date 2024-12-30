@@ -38,7 +38,7 @@ public class GradeCalculator {
         }
         System.out.println("Evaluating ...");
         System.out.println("Total Marks(out of " + (subjects * 100) + "): " + totalMarks);
-        System.out.println("Average Percentage: " + averagePercentage + "%");
+        System.out.println("Average Percentage: " + averagePercentage + " %");
         System.out.println("Grade: " + grade);
     }
 }

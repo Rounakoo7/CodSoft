@@ -10,7 +10,7 @@ public class NumberGame{
         int rounds = 0;
         while(true){
             rounds++;
-            int targetNumber = random.nextInt(100) + 1;
+            int targetNumber = random.nextInt(101);
             int attempts = 0;
             int maxAttempts = 5;
             int flag = 0;
@@ -25,12 +25,13 @@ public class NumberGame{
                     flag = 1;
                     break;
                 } 
-                else if(userGuess < targetNumber) {
+                else if(userGuess < targetNumber){
                     if(attempts == maxAttempts){
                         break;
                     }
                     System.out.println("The number you guessed is lower than the target number! Try again.");
-                } else {
+                } 
+                else{
                     if(attempts == maxAttempts){
                         break;
                     }
